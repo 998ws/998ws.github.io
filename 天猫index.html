@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页通栏及中间版心的设计</title>
+	<link rel="stylesheet" href="mydemo2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+     <style> body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+<!--top层-->
+	<div class="top">
+	<div class="inner">
+	<div class="top-left">欢迎登陆</div>
+	天猫购物网站
+	<div class="top-right">退出</div>
+	</div>
+	</div>
+<!--logo层-->	
+     <div class="logo">
+     	<div class="imgbox">
+        <img src="images/1.png">
+     	</div>
+     	<div class="inputbox"><br><br>
+         <form method="post" action="">
+         <input type="text" name="serch" placeholder="搜索..">
+         </form>
+     	</div>
+     </div>
+<!--nav层-->
+<div class="nav">
+	<ul>
+		<li><a href="">天猫超市</a></li>
+		<li><a href="">电器城</a></li>
+		<li><a href="">医药馆</a></li>
+		<li><a href="">天猫国际</a></li>
+		<li><a href="">天猫汽车</a></li>
+	</ul>
+</div>
+<!--banner层-->
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt="" width="100%"></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+           
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+ <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+<!--content图片层-->
+<div class="photowall">
+<div class="item"><a href=""><img src="images/image2.jpg" alt="01"></a></div>
+<div class="item"><a href=""><img src="images/image3.jpg" alt="02"></a></div>
+<div class="item"><a href=""><img src="images/image4.jpg" alt="03"></a></div>
+<div class="item"><a href=""><img src="images/image6.jpg" alt="04"></a></div>
+<div class="item"><a href=""><img src="images/image5.jpg" alt="05"></a></div>
+<div class="item"><a href=""><img src="images/image7.jpg" alt="06"></a></div>
+<div class="item"><a href=""><img src="images/image8.jpg" alt="07"></a></div>
+<div class="item"><a href=""><img src="images/image9.jpg" alt="08"></a></div>
+</div>
+<!--图文信息层-->
+<div class="content">
+<ul>
+	<li><a href=""><img src="images/image1.jpg" alt=""><br>
+	大众朗逸<br><span>￥<em>98000</em></span></a></li>
+	<li><a href=""><img src="images/image10.jpg" alt=""><br>
+	美国Elta MD<br><span>￥<em>158</em></span></a></li>
+	<li><a href=""><img src="images/image11.jpg" alt=""><br>
+	Armani/阿玛尼EA<br><span>￥<em>159</em></span></a></li>
+	<li><a href=""><img src="images/image12.jpg" alt=""><br>
+	澳洲进口红葡萄酒<br><span>￥<em>509</em></span></a></li>
+	<li><a href=""><img src="images/image13.jpg" alt=""><br>
+	Lenovo/联想 拯救者Y7000P <br><span>￥<em>6599</em></span></a></li>
+	<li><a href=""><img src="images/image14.jpg" alt=""><br>
+	联想小新Air14 2020<br><span>￥<em>5699</em></span></a></li>
+	<li><a href=""><img src="images/image15.jpg" alt=""><br>
+	神舟战神K670D/E/T <br><span>￥<em>3899</em></span></a></li>
+	<li><a href=""><img src="images/image16.jpg" alt=""><br>
+	戴尔/DELL 灵越5000 <br><span>￥<em>4999</em></span></a></li>
+</ul>
+</div>
+<!--结束显示-->
+<div class="card">
+	<div class="header"><h3>End</h3></div>
+</div>
+
+<!--底部显示-->
+<div class="bottom">
+	<div class="bottominner">
+	<p>制作信息：太原师范学院计算机系李宏</p>
+	<p>网络版权信息：lh@2950952153</p></div>
+</div>
+<!--返回顶部-->
+<div class="totop"><br><a href="#">顶部</a></div>	
+</body>
+</html>
